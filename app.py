@@ -91,7 +91,6 @@ def experience(team):
 def select_team():
     
     while True:
-        
         print(" Teams: \n\n 1: Panthers\n 2: Bandits\n 3: Warriors")
         
         try:
@@ -118,7 +117,6 @@ def main_program():
     print("\n      BASKETBALL TEAM STATS TOOL  \n         ------------------\n\nPlease follow the instructions below\n")
     
     while True:
-    
         print(" 1: Display Team Stats \n 2: Quit Program\n")
         
         try: 
@@ -131,7 +129,6 @@ def main_program():
         
         else:
             if choise == 1:
-                
                 team = select_team()
                 experienced, inexperienced = experience(balanced_teams[team])                            
                                                 
