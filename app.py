@@ -6,7 +6,6 @@ def clean_data(players):
     clean_players = players
     
     for player in clean_players:
-        
         player['height'] = int(player['height'][:2])
         player['guardians'] = player['guardians'].split(" and ")
         
@@ -96,16 +95,13 @@ def select_team():
         print(" Teams: \n\n 1: Panthers\n 2: Bandits\n 3: Warriors")
         
         try:
-            
             selected_team = int(input("\n Input the integer that corresponds with the team of your choosing: "))
                                 
-        except ValueError:
-                                
+        except ValueError:   
             print ("\n Please choose an integer within the range 1 - 3. \n")
             continue
                    
         else: 
-            
             if selected_team < 1 or selected_team > 3:
                 print ("\n Please choose an integer within the range 1 - 3. \n")
                 continue
@@ -126,17 +122,14 @@ def main_program():
         print(" 1: Display Team Stats \n 2: Quit Program\n")
         
         try: 
-        
             choise = int(input(" Choose an option from the menu above: "))
             print("")
         
         except ValueError: 
-        
             print("\n Please choose either 1 or 2. Integers only. \n") 
             continue
         
         else:
-        
             if choise == 1:
                 
                 team = select_team()
@@ -153,12 +146,10 @@ def main_program():
                 print (" ---------------\n")
                                                                   
             elif choise == 2:
-                
                 print(" Thank you. Enjoy your day.\n")
                 exit()
 
             else:
-            
                 print("Please choose either 1 or 2. Integers only. \n")
                 
                 
