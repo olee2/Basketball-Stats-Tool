@@ -11,4 +11,4 @@ The balance_team function makes sure that there is an equal number of players pe
 
 Then there is a function for calculating and returning avarage height; returning a string of player names, similar for guardians; and a last one for returning the number of experienced/inexperienced players.
 
-The select_team function let the user select the team they would look at the stats for, and the main_program functions ties all of the above together into a user experience.
+The select_team function let the user select the team they would like to look at the stats for, and the main_program functions ties all of the above together into a user experience.
