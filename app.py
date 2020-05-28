@@ -1,5 +1,5 @@
 import constants
-
+import copy
 
 def clean_data(players):
     
@@ -111,7 +111,8 @@ def select_team():
     
 def main_program():
     
-    clean_players = clean_data(constants.PLAYERS)
+    data_copy = copy.deepcopy(constants.PLAYERS)
+    clean_players = clean_data(data_copy)
     balanced_teams = balance_teams(constants.TEAMS, clean_players)
          
     print("\n      BASKETBALL TEAM STATS TOOL  \n         ------------------\n\nPlease follow the instructions below\n")
