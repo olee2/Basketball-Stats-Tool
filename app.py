@@ -2,6 +2,10 @@ import constants
 import copy
 
 def clean_data(players):
+"""
+The function modifies some the data from the
+constants.py file, that will later be passed to the function. 
+"""
     
     clean_players = players
     
@@ -19,6 +23,9 @@ def clean_data(players):
 
 
 def balance_teams(teams, players):
+"""
+Balance the teams with an equal number of players per team and an equal number of experienced/inexperienced players. 
+"""
     
     num_players = int((len(players) / len(teams)) / 2)
     count = 0
@@ -44,6 +51,9 @@ def balance_teams(teams, players):
 
 
 def avarage_height(team):
+"""
+Calculating and returning the team's avarage height. 
+"""
     
     list_of_heights = []
     num_players = 0 
@@ -56,6 +66,9 @@ def avarage_height(team):
     
 
 def name_players(team):
+"""
+Returning a string with the player names. 
+"""
 
     list_of_names = []
     
@@ -66,6 +79,10 @@ def name_players(team):
     
 
 def name_guardians(team):
+"""
+Returning a string with the guardian names.
+"""
+
     list_of_guardians = []
     
     for guardians in team:
@@ -75,6 +92,9 @@ def name_guardians(team):
 
   
 def experience(team):
+"""
+Calculate and return the number of experienced and inexperienced players. 
+"""
 
     num_experienced = 0
     num_inexperienced = 0
@@ -89,6 +109,9 @@ def experience(team):
 
 
 def select_team():
+"""
+Allowing the user to choose the team they would like to see the stats for.
+"""
     
     while True:
         print(" Teams: \n\n 1: Panthers\n 2: Bandits\n 3: Warriors")
@@ -110,6 +133,10 @@ def select_team():
                
     
 def main_program():
+"""
+The main program displaying all the information about the teams. 
+A small menu to tie it all together into a user experience.
+"""
     
     data_copy = copy.deepcopy(constants.PLAYERS)
     clean_players = clean_data(data_copy)
